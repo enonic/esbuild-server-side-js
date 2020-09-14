@@ -10,7 +10,7 @@ yarn add --dev @enonic/esbuild-server-side-js
 Make a file named esbuild.mjs containing:
 
 ```
-import {esbuildServerSideJs} from "@enonic/esbuild-server-side-js";
+import {esbuildServerSideJs} from '@enonic/esbuild-server-side-js';
 
 esbuildServerSideJs({
 	shims: [
@@ -44,3 +44,9 @@ processResources {
 	exclude '**/*.es'
 }
 ```
+
+## Changelog
+
+### 0.1.0
+
+* Handle externals

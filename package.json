@@ -28,5 +28,5 @@
     "test": "ava test/test.js && cat test/build/esbuild/main.js && cat test/build/resources/main/main.js && node test/build/resources/main/main.js"
   },
   "repository": "https://github.com/enonic/esbuild-server-side-js",
-  "version": "0.0.1"
+  "version": "0.1.0"
 }
