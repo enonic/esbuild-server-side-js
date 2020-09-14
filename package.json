@@ -1,0 +1,32 @@
+{
+  "author": "Christian Westgaard <cwe@enonic.com>",
+  "ava": {
+    "require": "@babel/register"
+  },
+  "dependencies": {
+    "glob": "^7.1.6"
+  },
+  "description": "Make it easy to esbuild server side js for Enonic XP",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/register": "7.11.5",
+    "ava": "3.12.1",
+    "esbuild": "0.7.1"
+  },
+  "files": [
+    "index.mjs"
+  ],
+  "keywords": [
+    "enonic",
+    "esbuild"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.mjs",
+  "name": "@enonic/esbuild-server-side-js",
+  "scripts": {
+    "test": "ava test/test.js && cat test/build/esbuild/main.js && cat test/build/resources/main/main.js && node test/build/resources/main/main.js"
+  },
+  "repository": "https://github.com/enonic/esbuild-server-side-js",
+  "version": "0.0.1"
+}
